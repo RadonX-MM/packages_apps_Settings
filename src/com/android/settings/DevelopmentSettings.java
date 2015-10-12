@@ -255,6 +255,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private DropDownPreference mNightModePreference;
 
+    private DropDownPreference mNightModePreference;
+
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
 
     private final ArrayList<SwitchPreference> mResetSwitchPrefs
@@ -407,6 +409,13 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         if (hdcpChecking != null) {
             mAllPrefs.add(hdcpChecking);
             removePreferenceForProduction(hdcpChecking);
+        }
+
+        mColorModePreference = (ColorModePreference) findPreference(KEY_COLOR_MODE);
+        mColorModePreference.updateCurrentAndSupported();
+        if (mColorModePreference.getTransformsCount() < 2) {
+            removePreference(KEY_COLOR_MODE);
+            mColorModePreference = null;
         }
 
         mNightModePreference = (DropDownPreference) findPreference(KEY_NIGHT_MODE);

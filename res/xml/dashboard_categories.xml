@@ -74,16 +74,16 @@
 
     <!-- CUSTOMIZATIONS -->
     <dashboard-category
-            android:id="@+id/uber_section"
-            android:key="@string/category_key_uber"
-            android:title="@string/header_category_uber" >
+            android:id="@+id/rnx_section"
+            android:key="@string/category_key_rnx"
+            android:title="@string/header_category_rnx" >
 
         <!-- ROM TWEAKS -->
         <dashboard-tile
-                android:id="@+id/uber_settings"
-                android:title="@string/uber_settings_title"
-                android:fragment="com.android.settings.uber.UberSettings" 
-        		android:icon="@drawable/ic_settings_uber" />
+                android:id="@+id/rnx_settings"
+                android:title="@string/rnx_settings_title"
+                android:fragment="com.android.settings.rnx.ReactorCore" 
+        		android:icon="@drawable/ic_settings_rnx" />
 
 	<!-- Layers -->
         <dashboard-tile

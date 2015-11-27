@@ -1,4 +1,4 @@
-package com.android.settings.uber;
+package com.android.settings.rnx;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -12,20 +12,22 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class PowerMenuActions extends SettingsPreferenceFragment implements
+public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-// private variables here
+		// private variables here
+		
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.custom_settings_power);
+        addPreferencesFromResource(R.xml.custom_settings_statusbar);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-    // preference changes here
+
+		// preference changes here
         return false;
     }
 

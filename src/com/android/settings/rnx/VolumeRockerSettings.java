@@ -1,4 +1,4 @@
-package com.android.settings.uber;
+package com.android.settings.rnx;
 
 import com.android.internal.logging.MetricsLogger;
 

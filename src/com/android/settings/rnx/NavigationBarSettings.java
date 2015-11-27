@@ -1,4 +1,4 @@
-package com.android.settings.uber;
+package com.android.settings.rnx;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -12,7 +12,7 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class StatusBarSettings extends SettingsPreferenceFragment implements
+public class NavigationBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
 		// private variables here
@@ -21,7 +21,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.custom_settings_statusbar);
+        addPreferencesFromResource(R.xml.custom_settings_navigation);
     }
 
     @Override

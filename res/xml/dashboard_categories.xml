@@ -83,7 +83,7 @@
                 android:id="@+id/rnx_settings"
                 android:title="@string/rnx_settings_title"
                 android:fragment="com.android.settings.rnx.ReactorCore" 
-        		android:icon="@drawable/ic_settings_rnx" />
+        		android:icon="@drawable/ic_settings_uber_alpha" />
 
 	<!-- Layers -->
         <dashboard-tile
